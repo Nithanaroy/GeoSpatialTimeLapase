@@ -7,7 +7,9 @@ app = Flask(__name__, static_url_path='/static')
 @app.route('/tiles/<zoom>/<y>/<x>', methods=['GET', 'POST'])
 def tiles(zoom, y, x):
     default = './data/JTileDownloader/USA/5/4/13.png'
-    filename = './data/JTileDownloader/USA/%s/%s/%s.png' % (zoom, x, y)
+    # filename = './data/JTileDownloader/USA/%s/%s/%s.png' % (zoom, x, y)
+    # filename = '/Volumes/350GB/Projects/DynamicTimeLapse/Software/mapnik-stylesheets/tiles/osm/tiles/%s/%s/%s.png' % (zoom, x, y)
+    filename = '/Volumes/350GB/Projects/DynamicTimeLapse/Software/mapnik-stylesheets/tiles/0/%s/%s/%s.png' % (zoom, x, y)
     if os.path.isfile(filename):
         return send_file(filename)
     else:

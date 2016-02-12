@@ -29,7 +29,7 @@
 </div> -->
 <script type="text/javascript">
     var map = L.map('map', {
-        center: [40, -95],
+        center: [40, -110],
         zoom: 5,
         subdomains: []
     });
@@ -62,7 +62,7 @@
     // }).addTo(map);
 
     L.tileLayer('http://localhost:5000/tiles/{z}/{y}/{x}', {
-        maxZoom: 8,
+        maxZoom: 12,
         attribution: 'Nitin'
     }).addTo(map);
 
@@ -89,7 +89,7 @@
         slide: function (event, ui) {
 
         }
-    });
+    }).focus();
 
     function getZoom(sw, ne) {
         // Code from http://stackoverflow.com/a/6055653/1585523

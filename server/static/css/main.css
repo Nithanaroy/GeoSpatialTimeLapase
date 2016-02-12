@@ -7,6 +7,13 @@ body {
     height: 100%;
 }
 
+#timer {
+    position: absolute;
+    bottom: 5em;
+    /* left: 2em; */
+    width: 96%;
+    margin: 0 3em;
+}
 
 /* side bar */
 
@@ -28,12 +35,12 @@ body {
 }
 
 #place_select input[type=text]:focus {
-	outline: none;
+    outline: none;
 }
 
 #place_select button {
     /* background: url('css/images/search.svg') no-repeat center; */
-    
+
     background-color: #4285f4;
     width: 3.5em;
     height: 2.25em;
@@ -46,6 +53,7 @@ body {
     font-family: sans-serif;
     color: #FFF;
 }
+
 #sidebar {
     width: 6em;
     height: 4em;
@@ -56,10 +64,12 @@ body {
     opacity: 0.8;
     border-radius: 0.4em;
 }
+
 #sidebar:hover {
     opacity: 0.9;
     cursor: pointer;
 }
+
 .bar {
     width: 80%;
     background: #AAA;
